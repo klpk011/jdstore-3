@@ -16,11 +16,11 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   process resize_to_fit: [800,800]
 
-  vission :thumb do
+  version :thumb do
     process resize_to_fill: [200,200]
   end
 
-  vission :medium do
+  version :medium do
     process resize_to_fill: [400,400]
   end
 
